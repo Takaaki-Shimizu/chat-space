@@ -4,8 +4,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: true|
-|image|string|null: true|
+|body|text|
+|image|string|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
@@ -23,7 +23,7 @@
 |encryptedpassword|string|null: false|
 
 ### Association
-- belongs_to :group
+- has_many :groups, through: :members
 - has_many :messages
 
 
@@ -36,6 +36,7 @@
 ### Association
 - has_many :users, through: :members
 - has_many :messages
+- has_many :members
 
 
 ## membersテーブル
