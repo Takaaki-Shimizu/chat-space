@@ -32,7 +32,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :users, through: :members
