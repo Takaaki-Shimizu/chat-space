@@ -1,9 +1,9 @@
-$(document).on('turbolinks:load', function(){
+$(function(){
   // メッセージ表示のHTML生成
   function buildHTML(message) {
     var content = message.content ? `${ message.content }` : "";
     var image_url = (message.image_url) ? `<image class="lower-message_image" src="${ message.image_url }">` : "";
-    var html = `<div class="message" id="${ message.id }">
+    var html = `<div class="message" data-message-id="${ message.id }">
                   <div class="upper-message">
                     <div class="upper-message__user-name">
                       ${ message.name }
@@ -15,8 +15,8 @@ $(document).on('turbolinks:load', function(){
                   <div class="lower-message">
                     <p class="lower-message__content">
                       ${message.content}
-                      ${image_url}
                     </p>
+                      ${image_url}
                   </div>
                 </div>`
     return html;
@@ -50,7 +50,11 @@ $(document).on('turbolinks:load', function(){
 
 //自動更新
   $(function(){
+<<<<<<< HEAD
     setInterval(autoUpdate, 10000);
+=======
+    setInterval(autoUpdate, 3000);
+>>>>>>> 001b6e5e6c4197927eb0cb4a9635d9e7b0824313
   });
   function autoUpdate() {
     if (location.href.match(/\/groups\/\d+\/messages/)) {
@@ -77,4 +81,8 @@ $(document).on('turbolinks:load', function(){
       clearInterval(autoUpdate);
     }
   };
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 001b6e5e6c4197927eb0cb4a9635d9e7b0824313

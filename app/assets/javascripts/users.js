@@ -32,7 +32,7 @@ $(function() {
     search_list.append(html);
   }
 
-  /*keyupイベントとAjax*/　
+  /*keyupイベントとAjax*/
   $("#user-search-field").on("keyup", function() {
     var users_id = [];
     chat_user.find('.chat-group-user').each( function( index, element ){
