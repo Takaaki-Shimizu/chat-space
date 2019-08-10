@@ -50,11 +50,7 @@ $(function(){
 
 //自動更新
   $(function(){
-<<<<<<< HEAD
-    setInterval(autoUpdate, 10000);
-=======
     setInterval(autoUpdate, 3000);
->>>>>>> 001b6e5e6c4197927eb0cb4a9635d9e7b0824313
   });
   function autoUpdate() {
     if (location.href.match(/\/groups\/\d+\/messages/)) {
@@ -81,8 +77,4 @@ $(function(){
       clearInterval(autoUpdate);
     }
   };
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 001b6e5e6c4197927eb0cb4a9635d9e7b0824313
