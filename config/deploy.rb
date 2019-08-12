@@ -6,7 +6,7 @@ set :application, "chat-space"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-set :repo_url, "git@example.com:Takaaki-shimizu/chat-space.git"
+set :repo_url, "git@github.com:Takaaki-shimizu/chat-space.git"
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, "/var/www/my_app_name"
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
