@@ -14,9 +14,9 @@ $(function(){
                   </div>
                   <div class="lower-message">
                     <p class="lower-message__content">
-                      ${message.content}
+                      ${content}
                     </p>
-                      ${message.image_url}
+                      ${image_url}
                   </div>
                 </div>`
     return html;
